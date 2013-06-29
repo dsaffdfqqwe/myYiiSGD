@@ -61,7 +61,7 @@
  
 <table  class='table'>
 	<tr>
-		<td colspan=2>
+		<td >
 			<h3>
 				<?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?>							
 			</h3>

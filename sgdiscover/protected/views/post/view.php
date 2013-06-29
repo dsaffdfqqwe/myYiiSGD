@@ -18,7 +18,7 @@ $this->menu=array(
 
 <h1>View Post #<?php echo $model->id; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php /* $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
@@ -36,4 +36,23 @@ $this->menu=array(
 		'update_time',
 		'author_id',
 	),
-)); ?>
+));*/ ?>
+
+
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
+    'data'=>$model,
+    'attributes'=>array(
+        array('name'=>'id', 'label'=>''),
+        array('name'=>'title', 'label'=>''),
+        array('name'=>'begin_time', 'label'=>''),
+        array('name'=>'end_time', 'label'=>''),
+        array('name'=>'location', 'label'=>''),
+        array('name'=>'category', 'label'=>''),
+        array('name'=>'content', 'label'=>''),
+        array('name'=>'tags', 'label'=>''),
+        array('name'=>'url', 'label'=>''),
+        array('name'=>'status', 'label'=>''),
+        array('name'=>'cost', 'label'=>''),
+        array('name'=>'status', 'label'=>''),
+    ),
+));?>
