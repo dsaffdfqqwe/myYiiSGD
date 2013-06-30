@@ -18,6 +18,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.modules.user.models.*',
 	),
 
 	'modules'=>array(
@@ -30,6 +31,9 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
                         'bootstrap.gii',
 		),
+                'user'=>array(
+                    'debug'=>false,
+                    ),
 		
 	),
         'theme'=>'bootstrap',
@@ -40,6 +44,9 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+                        'class'=>'application.modules.user.components.YumWebUser',
+                        'allowAutoLogin'=>true,
+                        'loginUrl'=>array('//user/user/login'),
 		),
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -52,6 +59,7 @@ return array(
 			),
 		),
 		 */
+            
 		/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -64,7 +72,7 @@ return array(
 			'username' => 'root',
 			'password' => 'appdev0001',
 			'charset' => 'utf8',
-			'tablePrefix' => 'tbl_',
+			'tablePrefix' => '',
                         'enableProfiling'=>true,
                         'enableParamLogging'=>true,
 		),
