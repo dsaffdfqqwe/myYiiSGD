@@ -39,7 +39,12 @@ return array(
         'theme'=>'bootstrap',
 	// application components
 	'components'=>array(
-            
+                /*'urlManager'=>array(
+                    'urlFormat'=>'path',
+                    'rules'=>array('post/<id:\d+>/<title:.*?>'=>'post/view'),
+                    'posts/<tag:.*?>'=>'post/index',
+                    '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                    ),*/
                 'cache' => array('class' => 'system.caching.CDummyCache'),
                 'bootstrap'=>array('class'=>'bootstrap.components.Bootstrap',),
             

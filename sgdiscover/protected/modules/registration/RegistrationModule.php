@@ -15,7 +15,7 @@ class RegistrationModule extends CWebModule {
 	public $activationFailureView = '/registration/activation_failure';
 
 	// Whether to confirm the activation of an user by email
-	public $enableActivationConfirmation = true; 
+	public $enableActivationConfirmation = false; 
 
 	public $registrationEmail='register@website.com';
 	public $recoveryEmail='restore@website.com';

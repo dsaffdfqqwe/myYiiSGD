@@ -51,3 +51,6 @@ $this->menu=array(
 	'itemView'=>'_view',
         'template' => "{items}\n{pager}",
 )); ?>
+
+
+<!--<?php $this->widget('application.modules.user.components.LoginWidget'); ?>-->
