@@ -39,6 +39,8 @@ return array(
         'theme'=>'bootstrap',
 	// application components
 	'components'=>array(
+            
+                'cache' => array('class' => 'system.caching.CDummyCache'),
                 'bootstrap'=>array('class'=>'bootstrap.components.Bootstrap',),
             
 		'user'=>array(

@@ -14,7 +14,11 @@ $this->menu=array(
 	array('label'=>'Delete Post', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Post', 'url'=>array('admin')),
 );
+
+//$this->widget('application.modules.user.components.LoginWidget'); 
+
 ?>
+
 
 <h1>View Post #<?php echo $model->id; ?></h1>
 
