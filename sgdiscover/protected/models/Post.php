@@ -102,7 +102,7 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, begin_time, end_time, content, status', 'required'),
+			array('title, begin_time, end_time, status', 'required'),
 			array('begin_time, end_time, status, create_time, update_time', 'numerical', 'integerOnly'=>true),
 			array('title, location', 'length', 'max'=>128),
                         array('status', 'in', 'range'=>array(1,2,3)),
