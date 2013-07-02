@@ -9,6 +9,7 @@
 
 <div class="form">
 
+
 <?php /*$form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
 	'enableAjaxValidation'=>false,
@@ -46,14 +47,19 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->textField($model,'begin_time');*/ ?>
 		<?php /*echo $form->error($model,'begin_time');*/ ?>
             
-            <?php echo $form->datepickerRow($model, 'begin_time',array('hint'=>'Click inside! This is a super cool date field.','prepend'=>'<i class="icon-calendar"></i>')); ?>
+            <?php echo $form->datepickerRow($model, 'begin_time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>
+            <?php echo $form->timepickerRow($model, 'timepicker', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
+          
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'end_time'); ?>
-		<?php echo $form->textField($model,'end_time'); ?>
-		<?php echo $form->error($model,'end_time'); ?>
-	</div>
+		<?php /* echo $form->labelEx($model,'end_time'); */?>
+		<?php /* echo $form->textField($model,'end_time'); */?>
+		<?php /* echo $form->error($model,'end_time'); */?>
+
+         <?php echo $form->datepickerRow($model, 'end_time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>
+	
+        </div>
 
 	
 
@@ -67,9 +73,10 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
+		<?php /*echo $form->labelEx($model,'content'); */?>
+		<?php /*echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); */?>
+		<?php /*echo $form->error($model,'content'); */?>
+            <?php echo $form->textAreaRow($model, 'content', array('class'=>'span8', 'rows'=>5)); ?>
 	</div>
 
 	<!--<div class="row">
@@ -101,9 +108,10 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cost'); ?>
-		<?php echo $form->textField($model,'cost',array('size'=>60,'maxlength'=>64)); ?>
-		<?php echo $form->error($model,'cost'); ?>
+		<?php /* echo $form->labelEx($model,'cost'); */?>
+		<?php /* echo $form->textField($model,'cost',array('size'=>60,'maxlength'=>64)); */?>
+		<?php /* echo $form->error($model,'cost'); */?>
+                <?php echo $form->textFieldRow($model, 'cost'); ?>
 	</div>
 
 	<!--<div class="row">
