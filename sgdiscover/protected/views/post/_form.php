@@ -7,6 +7,7 @@
 
 ?>
 
+
 <div class="form">
 
 
@@ -48,10 +49,10 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->error($model,'begin_time');*/ ?>
             
             <?php echo $form->datepickerRow($model, 'begin_time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>
-            <?php echo $form->timepickerRow($model, 'timepicker', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
+           
+        
           
 	</div>
-
 	<div class="row">
 		<?php /* echo $form->labelEx($model,'end_time'); */?>
 		<?php /* echo $form->textField($model,'end_time'); */?>
@@ -125,13 +126,13 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php echo $form->textField($model,'update_time'); ?>
 		<?php echo $form->error($model,'update_time'); ?>
 	</div>-->
-<!--
+       
 	<div class="row">
 		<?php echo $form->labelEx($model,'author_id'); ?>
 		<?php echo $form->textField($model,'author_id'); ?>
 		<?php echo $form->error($model,'author_id'); ?>
 	</div>
--->
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

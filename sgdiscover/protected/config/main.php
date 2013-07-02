@@ -79,7 +79,7 @@ return array(
 			'username' => 'root',
 			'password' => 'appdev0001',
 			'charset' => 'utf8',
-			'tablePrefix' => '',
+			 'tablePrefix' => '',
                         'enableProfiling'=>true,
                         'enableParamLogging'=>true,
 		),

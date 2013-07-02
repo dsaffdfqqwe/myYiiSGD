@@ -15,16 +15,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
         
+        <!--<script type="text/javascript" src="/yii/sgdiscover/assetsex/timepicker/jquery-ui-sliderAccess.js"></script>
+        <script type="text/javascript" src="/yii/sgdiscover/assetsex/timepicker/jquery-ui-timepicker-addon.js"></script>
         
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assetsex/timepicker/jquery-ui-timepicker-addon.css" />
+        --> 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
-
+<body> 
 <div class="container" id="page">
 
 	<!--<div id="header">
