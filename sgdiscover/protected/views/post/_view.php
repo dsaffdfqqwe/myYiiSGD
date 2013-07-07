@@ -84,9 +84,10 @@
                                 </td>
                         </tr>    
                         <tr>
-                                <td><i class="icon-search"></i><?php echo CHtml::encode($data->content); ?>
+                                <td><i class="icon-edit"></i><?php echo CHtml::encode($data->content); ?>
                                 </td>
                         </tr>  
+                        
                         <!--<tr>
                                 <td><i class="icon-phone-sign icon-small"></i> 新知家 / <a href='tel:92345238'>92345238</a>					</td>
                         </tr>-->

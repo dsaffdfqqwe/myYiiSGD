@@ -113,7 +113,7 @@ class Post extends CActiveRecord
 			array('status, create_time, update_time', 'numerical', 'integerOnly'=>true),
 			array('title, location', 'length', 'max'=>128),
                         //array('status', 'in', 'range'=>array(1,2,3)),
-			array('category, cost', 'length', 'max'=>64),
+			array('category', 'length', 'max'=>64),
                         //array('tags','match', 'pattern'=>'/^[\w\s,]+$','message'=>'Tags can only contain word characters'),
 			//array('tags', 'normalizeTags'),
 			// The following rule is used by search().
