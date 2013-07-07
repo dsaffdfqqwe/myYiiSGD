@@ -49,8 +49,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->error($model,'begin_time');*/ ?>
             
             <?php echo $form->datepickerRow($model, 'day',array('append'=>'<i class="icon-calendar"></i>')); ?>
-          <?php echo $form->timepickerRow($model, 'time', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
-           
+         
         
           
 	</div>
@@ -58,8 +57,9 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /* echo $form->labelEx($model,'end_time'); */?>
 		<?php /* echo $form->textField($model,'end_time'); */?>
 		<?php /* echo $form->error($model,'end_time'); */?>
-
-         <!--<?php echo $form->datepickerRow($model, 'time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>-->
+ <?php echo $form->timepickerRow($model, 'time', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
+           
+         <?php /*echo $form->datepickerRow($model, 'time',array('prepend'=>'<i class="icon-calendar"></i>')); */?>
 	
         </div>
 
