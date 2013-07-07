@@ -130,7 +130,7 @@ class PostController extends Controller
                }
                 
             
-               $dataProvider=new CActiveDataProvider('Post',array('pagination'=>array('pageSize'=>5,),'criteria'=>$criteria,));
+               $dataProvider=new CActiveDataProvider('Post',array('pagination'=>array('pageSize'=>3,),'criteria'=>$criteria,));
 	       $this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

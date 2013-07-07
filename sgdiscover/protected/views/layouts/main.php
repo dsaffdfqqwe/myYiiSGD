@@ -1,9 +1,6 @@
-
-<?php Yii::app()->bootstrap->register(); ?>
-
 <?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
@@ -70,11 +67,41 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
+	<!--<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+	</div>--><!-- footer -->
+        
+        <div id="footer">
+		<div class='container'>
+			<div class='row-fluid'>
+				<div class='span12'>
+					<a href="">About</a>					&nbsp;
+					<a href="">Contact</a>					&nbsp;
+					<a href="">Policy</a>					&nbsp;
+					<a href="">Help</a>				</div>
+			</div>
+
+			<div class='row-fluid'>
+				<div class='span12'>
+					&copy; Copyright 2011–2013 All Rights Reserved. This website was
+					powered by
+					<a href="/category/view">Sg Discovery</a>					<br />
+
+				</div>
+			</div>
+			<div class='row-fluid'>
+				<div class='span12'>
+                                            <a href='http://huasing.org/' target='_blank'>华新bbs					</a> &nbsp;
+                                            <a href='http://www.chinaembassy.org.sg/' target='_blank'>中国驻新大使馆					</a> &nbsp;
+                                            <a href='http://www.hdb.gov.sg/' target='_blank'>新加坡政府组屋					</a> &nbsp;
+                                            <!--<a href='http://www.huaren.sg' target='_blank'>新加坡华人网					</a> &nbsp;
+                                            <a href='http://www.wangzhan.sg' target='_blank'>新加坡网站导航-->					</a> &nbsp;
+                                </div>
+			</div>
+		</div>
+	</div>
 
 </div><!-- page -->
 

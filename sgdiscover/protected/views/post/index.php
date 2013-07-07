@@ -1,4 +1,4 @@
-<?php Yii::app()->bootstrap->register(); ?>
+
 
 <?php
 /* @var $this PostController */

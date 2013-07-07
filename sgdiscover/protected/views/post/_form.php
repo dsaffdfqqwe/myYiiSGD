@@ -70,9 +70,9 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php echo $form->textField($model,'category',array('size'=>60,'maxlength'=>64)); ?>
 		<?php echo $form->error($model,'category'); ?>
 	</div>-->
-        <div class="row">         
+        <!--<div class="row">         
                 <?php echo $form->textFieldRow($model, 'category'); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
 		<?php /*echo $form->labelEx($model,'content'); */?>
@@ -86,18 +86,19 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'tags'); ?>
 	</div>-->
-         <div class="row">         
+        <!--
+        <div class="row">         
                 <?php echo $form->textFieldRow($model, 'tags'); ?>
-	</div>
+	</div>-->
 
 	<!--<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'url'); ?>
 	</div>-->
-         <div class="row">         
+         <!--<div class="row">         
                 <?php echo $form->textFieldRow($model, 'url'); ?>
-	 </div>
+	 </div>-->
 
 	<div class="row">
                 <?php /* echo $form->labelEx($model,'status'); */?>
@@ -108,14 +109,14 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
                 <?php echo $form->dropDownListRow($model, 'status',array('1', '2', '3')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
-
+<!--
 	<div class="row">
 		<?php /* echo $form->labelEx($model,'cost'); */?>
 		<?php /* echo $form->textField($model,'cost',array('size'=>60,'maxlength'=>64)); */?>
 		<?php /* echo $form->error($model,'cost'); */?>
                 <?php echo $form->textFieldRow($model, 'cost'); ?>
 	</div>
-
+-->
 	<!--<div class="row">
 		<?php echo $form->labelEx($model,'create_time'); ?>
 		<?php echo $form->textField($model,'create_time'); ?>
@@ -133,9 +134,9 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php echo $form->textField($model,'author_id'); ?>
 		<?php echo $form->error($model,'author_id'); ?>
 	</div>-->
-        <div class="row">
+        <!--<div class="row">
              <?php echo $form->textFieldRow($model, 'author_id'); ?>
-	</div>
+	</div>-->
 <!--
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

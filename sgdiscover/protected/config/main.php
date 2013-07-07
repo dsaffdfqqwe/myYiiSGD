@@ -3,7 +3,7 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
-//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 
 // This is the main Web application configuration. Any writable
@@ -30,14 +30,14 @@ return array(
 			'password'=>'appdev0001',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-                        'generatorPaths' => array('bootstrap.gii'),
+                        'generatorPaths' => array('bootstrap.gii',),
 		),
                 'user'=>array(
                     'debug'=>false,
                     ),
 		
 	),
-        //'theme'=>'bootstrap',
+        'theme'=>'bootstrap',
 	// application components
 	'components'=>array(
                 /*'urlManager'=>array(
@@ -47,7 +47,7 @@ return array(
                     '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                     ),*/
                 'cache' => array('class' => 'system.caching.CDummyCache'),
-                'bootstrap'=>array('class'=>'ext.bootstrap.components.Bootstrap','responsiveCss' => true,),
+                'bootstrap'=>array('class'=>'ext.bootstrap.components.Bootstrap',),
             
 		'user'=>array(
 			// enable cookie-based authentication
