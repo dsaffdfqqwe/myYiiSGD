@@ -47,8 +47,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'id',
 		'title',
-		'begin_time',
-		'end_time',
+		'day',
+		'time',
 		'location',
 		'category',
 		/*

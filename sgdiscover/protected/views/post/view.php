@@ -1,4 +1,5 @@
-<?php
+
+?php
 /* @var $this PostController */
 /* @var $model Post */
 
@@ -48,8 +49,8 @@ $this->menu=array(
     'attributes'=>array(
         array('name'=>'id', 'label'=>''),
         array('name'=>'title', 'label'=>''),
-        array('name'=>'begin_time', 'label'=>''),
-        array('name'=>'end_time', 'label'=>''),
+        array('name'=>'day', 'label'=>''),
+        array('name'=>'time', 'label'=>''),
         array('name'=>'location', 'label'=>''),
         array('name'=>'category', 'label'=>''),
         array('name'=>'content', 'label'=>''),

@@ -48,7 +48,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->textField($model,'begin_time');*/ ?>
 		<?php /*echo $form->error($model,'begin_time');*/ ?>
             
-            <?php echo $form->datepickerRow($model, 'begin_time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>
+            <?php echo $form->datepickerRow($model, 'day',array('append'=>'<i class="icon-calendar"></i>')); ?>
+          <?php echo $form->timepickerRow($model, 'time', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
            
         
           
@@ -58,7 +59,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /* echo $form->textField($model,'end_time'); */?>
 		<?php /* echo $form->error($model,'end_time'); */?>
 
-         <?php echo $form->datepickerRow($model, 'end_time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>
+         <!--<?php echo $form->datepickerRow($model, 'time',array('prepend'=>'<i class="icon-calendar"></i>')); ?>-->
 	
         </div>
 
@@ -127,20 +128,23 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php echo $form->error($model,'update_time'); ?>
 	</div>-->
        
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'author_id'); ?>
 		<?php echo $form->textField($model,'author_id'); ?>
 		<?php echo $form->error($model,'author_id'); ?>
+	</div>-->
+        <div class="row">
+             <?php echo $form->textFieldRow($model, 'author_id'); ?>
 	</div>
-
+<!--
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
-    
+-->    
     
     <div class="form-actions">
         <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Submit')); ?>
-        <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'reset', 'label'=>'Reset')); ?>
+       
     </div>
    
 <?php $this->endWidget(); ?>

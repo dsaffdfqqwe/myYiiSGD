@@ -13,12 +13,12 @@
 	<?php echo CHtml::encode($data->title); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('begin_time')); ?>:</b>
-	<?php echo CHtml::encode($data->begin_time); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('day')); ?>:</b>
+	<?php echo CHtml::encode($data->day); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('end_time')); ?>:</b>
-	<?php echo CHtml::encode($data->end_time); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('time')); ?>:</b>
+	<?php echo CHtml::encode($data->time); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('location')); ?>:</b>
@@ -62,22 +62,22 @@
 <table  class='table'>
 	<tr>
 		<td >
-			<h3>
-				<?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?>							
+			<h3>	
+			<?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?>							
 			</h3>
 		</td>
 	</tr>
 	<tr>
 		<td><table class='table table-bordered table-striped list'>
                         <tr>
-                                <td><i class="icon-calendar icon-small"></i> <?php echo CHtml::encode($data->begin_time); ?> to <?php echo CHtml::encode($data->end_time); ?></td>
+                                <td><i class="icon-calendar icon-small"></i> <?php echo CHtml::encode(date('m-d',$data->day)); ?> <?php echo CHtml::encode(date('gA',$data->time)); ?></td>
                                 <!--<td rowspan='5'
                                         style='width: 170px; padding-right: 20px; vertical-align: top;'
                                         class='hideMobile'><a href="/event/view/id/165"><img class="thumbnail" src="/images/cover/thumbnail165.png" alt="新加坡英语口语聚会" /></a></td>-->
                         </tr>
                         <tr>
                                 <td><i class="icon-map-marker icon-large"></i> <a target='_blank'
-                                        href='https://maps.google.com/maps?output=embed&q=Singapore+203+Hougang+Street+21+%2304-75'>203 Hougang Street 21 #04-75					</a></td>
+                                        href='https://maps.google.com/maps?output=embed&q=<?php echo CHtml::encode($data->location); ?>'><?php echo CHtml::encode($data->location); ?>			</a></td>
                         </tr>                     
                         <!--<tr>
                                 <td><i class="icon-phone-sign icon-small"></i> 新知家 / <a href='tel:92345238'>92345238</a>					</td>

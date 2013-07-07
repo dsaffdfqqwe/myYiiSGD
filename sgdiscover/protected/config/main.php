@@ -2,7 +2,8 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+
+//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 
 // This is the main Web application configuration. Any writable
@@ -12,7 +13,7 @@ return array(
 	'name'=>'My Web Application',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log','bootstrap',),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -29,14 +30,14 @@ return array(
 			'password'=>'appdev0001',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-                        'bootstrap.gii',
+                        'generatorPaths' => array('bootstrap.gii'),
 		),
                 'user'=>array(
                     'debug'=>false,
                     ),
 		
 	),
-        'theme'=>'bootstrap',
+        //'theme'=>'bootstrap',
 	// application components
 	'components'=>array(
                 /*'urlManager'=>array(
@@ -46,7 +47,7 @@ return array(
                     '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                     ),*/
                 'cache' => array('class' => 'system.caching.CDummyCache'),
-                'bootstrap'=>array('class'=>'bootstrap.components.Bootstrap',),
+                'bootstrap'=>array('class'=>'ext.bootstrap.components.Bootstrap','responsiveCss' => true,),
             
 		'user'=>array(
 			// enable cookie-based authentication

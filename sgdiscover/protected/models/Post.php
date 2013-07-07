@@ -55,13 +55,17 @@ class Post extends CActiveRecord
                 {
                     $this->create_time = $this->update_time=time();
                     $this->author_id = Yii::app()->user->id;
-                    $this->create_time = strtotime($this->create_time);
-                    $this->end_time = strtotime($this->end_time);
+                    $this->day = strtotime($this->day);
+                    $this->time = strtotime($this->time);
+                    $this->status = 2;
                     //$this->author_id=1;
                     }
                 else 
                 {
+                    //$this->begin_time = strtotime($this->begin_time);
+                    //$this->end_time = strtotime($this->end_time);
                     $this->update_time = time();
+                    $this->status = 2;
                 }
                 return true;
             }
@@ -105,10 +109,10 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, begin_time, end_time, status', 'required'),
+			array('title, status', 'required'),
 			array('status, create_time, update_time', 'numerical', 'integerOnly'=>true),
 			array('title, location', 'length', 'max'=>128),
-                        array('status', 'in', 'range'=>array(1,2,3)),
+                        //array('status', 'in', 'range'=>array(1,2,3)),
 			array('category, cost', 'length', 'max'=>64),
                         //array('tags','match', 'pattern'=>'/^[\w\s,]+$','message'=>'Tags can only contain word characters'),
 			//array('tags', 'normalizeTags'),
@@ -143,8 +147,8 @@ class Post extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Title',
-			'begin_time' => 'Begin Time',
-			'end_time' => 'End Time',
+			'day' => 'Day',
+			'time' => 'Time',
 			'location' => 'Location',
 			'category' => 'Category',
 			'content' => 'Content',
@@ -171,8 +175,8 @@ class Post extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('begin_time',$this->begin_time);
-		$criteria->compare('end_time',$this->end_time);
+		$criteria->compare('day',$this->day);
+		$criteria->compare('time',$this->time);
 		$criteria->compare('location',$this->location,true);
 		$criteria->compare('category',$this->category,true);
 		$criteria->compare('content',$this->content,true);

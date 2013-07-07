@@ -1,3 +1,5 @@
+<?php Yii::app()->bootstrap->register(); ?>
+
 <?php
 /* @var $this PostController */
 /* @var $dataProvider CActiveDataProvider */
