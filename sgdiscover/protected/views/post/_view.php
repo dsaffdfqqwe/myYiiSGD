@@ -80,7 +80,7 @@
                         </tr>
                         <tr>
                                 <td><i class="icon-map-marker"></i> <a target='_blank'
-                                        href='https://maps.google.com/maps?output=embed&q=<?php echo CHtml::encode($data->location); ?>'><?php echo CHtml::encode($data->location); ?></a>
+                                        href='https://maps.google.com/maps?output=embed&q=singapore <?php echo CHtml::encode($data->location); ?>'><?php echo CHtml::encode($data->location); ?></a>
                                 </td>
                         </tr>    
                         <tr>
