@@ -75,13 +75,13 @@
         
         <div id="footer">
 		<div class='container'>
-			<div class='row-fluid'>
+			<!--<div class='row-fluid'>
 				<div class='span12'>
 					<a href="">About</a>					&nbsp;
 					<a href="">Contact</a>					&nbsp;
 					<a href="">Policy</a>					&nbsp;
 					<a href="">Help</a>				</div>
-			</div>
+			</div>-->
 
 			<div class='row-fluid'>
 				<div class='span12'>
@@ -96,6 +96,9 @@
                                             <a href='http://huasing.org/' target='_blank'>华新bbs					</a> &nbsp;
                                             <a href='http://www.chinaembassy.org.sg/' target='_blank'>中国驻新大使馆					</a> &nbsp;
                                             <a href='http://www.hdb.gov.sg/' target='_blank'>新加坡政府组屋					</a> &nbsp;
+                                            <a href='http://www.publictransport.sg/content/publictransport/en/homepage.html' target='_blank'>sg public transport					</a> &nbsp;
+                                            
+                                           
                                             <!--<a href='http://www.huaren.sg' target='_blank'>新加坡华人网					</a> &nbsp;
                                             <a href='http://www.wangzhan.sg' target='_blank'>新加坡网站导航-->					</a> &nbsp;
                                 </div>
