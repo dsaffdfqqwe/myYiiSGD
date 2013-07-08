@@ -43,13 +43,14 @@
                 <?php $this->widget('bootstrap.widgets.TbNavbar', array(
                 'brand' => 'Sgdiscovery',
                 'type' => 'inverse',
+                 //'stacked'=>false, 
                 'items' => array(
                 array(
                 'class' => 'bootstrap.widgets.TbMenu',
                 'items' => array(
                     array('label'=>'Home', 'url'=>array('/site/index'), 'active'=>true),
-                    array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                    array('label'=>'Contact', 'url'=>array('/site/contact')),
+                    array('label'=>'Bus', 'url'=>array('http://127.0.0.1/yii/sgdiscover/assets/busroutersg/')),
+                    //array('label'=>'Contact', 'url'=>array('/site/contact')),
                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                     array('label'=>'Logout('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                     )))));?>
