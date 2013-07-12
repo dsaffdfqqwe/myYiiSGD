@@ -49,7 +49,7 @@
                 'class' => 'bootstrap.widgets.TbMenu',
                 'items' => array(
                     array('label'=>'Home', 'url'=>array('/site/index'), 'active'=>true),
-                    array('label'=>'Bus', 'url'=>array('http://127.0.0.1/yii/sgdiscover/assets/busroutersg/')),
+                    //array('label'=>'Bus', 'url'=>array('http://127.0.0.1/yii/sgdiscover/assets/busroutersg/')),
                     //array('label'=>'Contact', 'url'=>array('/site/contact')),
                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                     array('label'=>'Logout('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
@@ -98,7 +98,7 @@
                                             <a href='http://www.chinaembassy.org.sg/' target='_blank'>中国驻新大使馆					</a> &nbsp;
                                             <a href='http://www.hdb.gov.sg/' target='_blank'>新加坡政府组屋					</a> &nbsp;
                                             <a href='http://www.publictransport.sg/content/publictransport/en/homepage.html' target='_blank'>sg public transport					</a> &nbsp;
-                                            
+                                            <a href='http://127.0.0.1/yii/sgdiscover/assets/busroutersg/' target='_blank'>sg bus					</a> &nbsp;
                                            
                                             <!--<a href='http://www.huaren.sg' target='_blank'>新加坡华人网					</a> &nbsp;
                                             <a href='http://www.wangzhan.sg' target='_blank'>新加坡网站导航-->					</a> &nbsp;
