@@ -100,7 +100,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->labelEx($model,'content'); */?>
 		<?php /*echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); */?>
 		<?php /*echo $form->error($model,'content'); */?>
-            <?php echo $form->textAreaRow($model, 'content', array('class'=>'span8', 'rows'=>5)); ?>
+            <?php echo $form->textAreaRow($model, 'content', array('class'=>'span6', 'rows'=>10)); ?>
 	</div>
 
 	<!--<div class="row">
@@ -166,7 +166,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 -->    
     
     <div class="form-actions">
-        <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Submit')); ?>
+        <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Create')); ?>
        
     </div>
    

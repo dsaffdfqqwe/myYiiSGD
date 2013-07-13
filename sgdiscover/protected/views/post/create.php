@@ -17,8 +17,8 @@ $this->menu=array(
 
 
 
-<h1>Create Post</h1>
-
+<h2>Create Activity</h2>
+<br/>
 
 
 
