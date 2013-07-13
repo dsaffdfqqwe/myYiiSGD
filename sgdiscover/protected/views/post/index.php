@@ -50,7 +50,7 @@ $this->menu=array(
 <?php $this->widget('bootstrap.widgets.TbCarousel', array(
   'items'=>array(
       array(
-		'image'=>'http://127.0.0.1/yii/sgdiscover/images/3.jpg',
+		'image'=>'http://127.0.0.1/yii/sgdiscover/images/2.jpg',
 		'label'=>'',
 		'caption'=>'',
                 'imageOptions' => array('width'=>'830','height'=>'400'),
@@ -58,11 +58,11 @@ $this->menu=array(
       array(
 		'image'=>'http://127.0.0.1/yii/sgdiscover/images/2.jpg',
 		'label'=>'',
-		'caption'=>''),
+		'caption'=>'', 'imageOptions' => array('width'=>'830','height'=>'400'),),
       array(
-		'image'=>'http://127.0.0.1/yii/sgdiscover/images/4.jpg',
+		'image'=>'http://127.0.0.1/yii/sgdiscover/images/2.jpg',
 		'label'=>'',
-		'caption'=>''),
+		'caption'=>'', 'imageOptions' => array('width'=>'830','height'=>'400'),),
   ),
 ));?>
 
