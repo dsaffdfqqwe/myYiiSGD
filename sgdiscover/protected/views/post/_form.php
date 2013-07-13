@@ -48,18 +48,40 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 		<?php /*echo $form->textField($model,'begin_time');*/ ?>
 		<?php /*echo $form->error($model,'begin_time');*/ ?>
             
-            <?php echo $form->datepickerRow($model, 'day',array('append'=>'<i class="icon-calendar"></i>')); ?>
-         
-        
+ <?php /* echo $form->datepickerRow($model, 'day',array('append'=>'<i class="icon-calendar"></i>')); */ ?>
+ <div class="control-group">
+  
+     <label class="control-label" for="Post_day">Day</label>
+     <div class="controls bootstrap-timepicker">     
+ <div class="input-prepend">
+     
+ 
+ <span class="add-on"><i class="icon-calendar" style="cursor:pointer"></i></span>
+     <?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+    'name'=>'Post[day]',
+    // additional javascript options for the date picker plugin
+    'options'=>array(
+        'showAnim'=>'fold',
+        'changeMonth' => true,
+        'changeYear' => true
+    ),
+    'htmlOptions'=>array(
+        'style'=>'height:20px;'
+    ),
+)); ?>
+
+ 
+</div>        
+</div>        
+</div>        
           
 	</div>
 	<div class="row">
 		<?php /* echo $form->labelEx($model,'end_time'); */?>
 		<?php /* echo $form->textField($model,'end_time'); */?>
 		<?php /* echo $form->error($model,'end_time'); */?>
- <?php echo $form->timepickerRow($model, 'time', array('append'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
            
-         <?php /*echo $form->datepickerRow($model, 'time',array('prepend'=>'<i class="icon-calendar"></i>')); */?>
+         <?php echo $form->timepickerRow($model, 'time', array('prepend'=>'<i class="icon-time" style="cursor:pointer"></i>'));?>
 	
         </div>
 
