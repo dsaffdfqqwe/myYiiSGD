@@ -19,19 +19,19 @@
                 </td>		
 	</tr>   
                         <tr>
-                                <td><i class="icon-calendar"></i> <?php echo CHtml::encode(date('m-d',$data->day)); ?> <?php echo CHtml::encode(date('gA',$data->time)); ?>
+                            <td style="background: white"><i class="icon-calendar"></i> <?php echo CHtml::encode(date('m-d',$data->day)); ?> <?php echo CHtml::encode(date('gA',$data->time)); ?>
                                 </td>
                                 <td rowspan='5'
                                         style='width: 300px; padding-right: 20px; vertical-align: top;'
                                         class='hideMobile'><a href=<?php echo CHtml::link("", array('view', 'id'=>$data->id)); ?><img class="thumbnail" src="http://127.0.0.1/yii/sgdiscover/images/pic/<?php echo mt_rand(1,65)?>.jpg" alt="" /></a></td>
                         </tr>
                         <tr>
-                                <td><i class="icon-map-marker"></i> <a target='_blank'
+                                <td style="background: white"><i class="icon-map-marker"></i> <a target='_blank'
                                         href='https://maps.google.com/maps?output=embed&q=singapore <?php echo CHtml::encode($data->location); ?>'><?php echo CHtml::encode($data->location); ?></a>
                                 </td>
                         </tr>    
                         <tr>
-                                <td><i class="icon-edit"></i><?php echo CHtml::encode($data->content); ?>
+                                <td  style="background: white"><i class="icon-edit"></i><?php echo CHtml::encode($data->content); ?>
                                 </td>
                         </tr>  
                         
