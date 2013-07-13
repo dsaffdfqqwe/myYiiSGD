@@ -20,6 +20,11 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assetsex/timepicker/jquery-ui-timepicker-addon.css" />
         --> 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        
+        <style type="text/css">
+        body { background-color: #FFF; background: url(http://127.0.0.1/yii/sgdiscover/images/g_body_bg.png) repeat; }
+        
+        </style>
 </head>
 
 <body> 
